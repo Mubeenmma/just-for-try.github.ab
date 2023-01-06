@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bulb Swicth</title>
+    <style>
+        .main-div{
+            text-align: center;
+        }
+        .off-button{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function onBulb(){
+            var mybulb = document.getElementById('bulb');
+            mybulb.src = 'b2.jpg';
+        }
+        // function offbulb(){
+        //     var mybulb = document.getElementById('offbulb');
+        //     mybulb.src = 'b1.jpg';
+        // }
+    </script>
+</head>
+<body>
+    <div class="main-div">
+        <img src="b1.jpg" id="bulb"> <br> <br>
+        <input type="button" value="On Bulb" onclick="onBulb()"/>
+    </div>
+    <br>
+    <!-- <div class="off-button">
+        <input type="button" value="off bulb" onclick="offbulb()"/>
+    </div> -->
+</body>
+</html>

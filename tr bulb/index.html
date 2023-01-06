@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;700&family=Lato&family=Raleway:wght@500&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;700&family=Inconsolata:wght@300&family=Lato&family=Raleway:wght@500&display=swap" rel="stylesheet"/> 
+      
+     <style>
+        /*CSS selector*/
+        #main-div{
+            /*property: value*/
+            height: 55px;
+            width: 100%;
+            text-align: left;
+            line-height: 55px;
+            font-family: raleway;
+            color: tomato;
+        }
+        .logo-title{
+            font-family: dancing script;
+            font-size: 24px;
+            font-weight: bold;
+        }
+       .hr-line{
+            margin-top: 20px;
+            border: 1px solid rgb(238, 163, 150);
+       }
+       h2{
+        font-family: Inconsolata;
+        color: crimson;
+       }
+    </style>
+
+    <script>
+        function changeColor(){
+          var  myheading = document.getElementById('heading-1');
+          myheading.style.color = 'seagreen';
+          myheading.style.fontStyle ='italic';
+          myheading.style.fontFamily = 'cursive';
+          myheading.style.backgroundColor = 'yellow';
+        }
+    </script>
+</head>
+<body>
+    <div id="main-div">
+        <img src="logo.png" height="55" width="55">
+        <span class="logo-title">E-Kart Shopping</span>
+    </div>
+    <hr class="hr-line">
+    <div class="products">
+        <h2 id="heading-1">New Arrivals</h2>
+        <br>
+        <input type="button" value="Change Color" onclick="changeColor()"/>
+    </div>
+</body>
+</html>
